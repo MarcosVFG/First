@@ -1,0 +1,148 @@
+:root {
+    --primary-bg-principal: hsl(233, 47%, 7%);
+    --primary-bg-card: hsl(244, 38%, 16%);
+    --primary-accent: hsl(276, 53%, 59%);
+    
+    --neutral-heading: hsl(0, 0%, 100%);
+    --neutral-paragraph: hsla(0, 0%, 100%, 0.75);
+    --neutral-stating: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-size: 15px;
+    background-color: var(--primary-bg-principal);
+    justify-content: center;
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    background-color: var(--primary-bg-card);
+    width: 80%;
+    border-radius: 0.5rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    justify-content: space-between;
+}
+
+.information {
+    margin-bottom: 2rem;
+}
+
+.text-primary {
+    font-family:'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--neutral-heading);
+    width: 80%;
+}
+
+.insights {
+    color: var(--primary-accent);
+}
+
+.insights:hover {
+    color: #5a189a;
+}
+
+.paragraph-primary {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: var(--neutral-paragraph);
+    width: 70%;
+}
+
+.text-secondary {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--neutral-heading);
+    width: 100%;
+    margin: 0px;
+    padding-top: 10%
+}
+
+.text-secondary:hover {
+    color: #5a189a;
+}
+
+.paragraph-secondary {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--neutral-paragraph);
+    margin: 3px;
+}
+
+.photo {
+    display: flex;
+    margin: 0;
+}
+
+@media (min-width: 1001px) {
+    .photo {
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+    .information {
+        margin-top: 3rem;
+        margin-left: 6rem;
+    }
+    .paragraph-secondary {
+        margin-top: 10%
+    }
+    .information2 {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin-top: 15%;
+        flex-wrap: wrap;
+    }
+    .tex3{
+        padding-top: 3px;
+    }
+}
+
+@media (max-width: 1300px) {
+   .card {
+       flex-direction: column-reverse;
+       width: 60%;
+   }
+   .photo {
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    }
+    .text-primary {
+        text-align: center;
+        margin-left: 5%;
+        width: 90%;
+    }
+    .paragraph-primary {
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .information {
+        text-align: center;
+    }
+}
+
+@media (max-width: 420px) {
+    .card {
+        width: 90%;
+    }
+    .text-primary {
+        margin-left: 5%;
+        width: 90%;
+    }
+    .paragraph-primary {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .information {
+        text-align: center;
+    }
+}
+
